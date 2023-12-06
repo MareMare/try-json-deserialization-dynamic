@@ -22,3 +22,6 @@ dotnet run -c Release --project src/JsonDeserializationDynamicObject.Benchmark
 | UsingDynamic                | NewtonsoftJson |  5,674.9 μs |   112.59 μs |   239.95 μs |  5,698.2 μs |  7.37 |    0.44 |
 | UsingExpandoObject          | NewtonsoftJson | 74,354.8 μs | 1,485.72 μs | 2,130.78 μs | 74,166.2 μs | 96.49 |    5.16 |
 
+## Benchmark Charts
+
+https://maremare.github.io/try-json-deserialization-dynamic/dev/bench/
