@@ -2,9 +2,15 @@ name: Benchmark
 on:
   workflow_dispatch:
 
+permissions:
+  # deployments permission to deploy GitHub pages website
+  deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
+  contents: write
+
 jobs:
   benchmark:
-    name: Benchmark on windows
+    name: Performance regression check
     runs-on: windows-latest
     steps:
     - name: 🛒 Checkout
@@ -15,3 +21,15 @@ jobs:
         dotnet-version: "8.0.x"
     - name: 📏 Run Benchmarks
       run: dotnet run --configuration Release --project src/JsonDeserializationDynamicObject.Benchmark
+    
+    # gh-pages branch is updated and pushed automatically with extracted benchmark data
+    - name: 📌 Store benchmark result
+      uses: benchmark-action/github-action-benchmark@v1
+      with:
+        name: JsonDeserializationDynamicObject Benchmark
+        tool: 'benchmarkdotnet'
+        output-file-path: BenchmarkDotNet.Artifacts/results/JsonDeserializationDynamicObject.Benchmark.Benchmarks-report-full.json
+        # Access token to deploy GitHub Pages branch
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        # Push and deploy GitHub pages branch automatically
+        auto-push: true

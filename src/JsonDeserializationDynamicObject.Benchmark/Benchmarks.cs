@@ -8,6 +8,10 @@ namespace JsonDeserializationDynamicObject.Benchmark
 {
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [CategoriesColumn]
+    [MemoryDiagnoser]
+    [ShortRunJob]
+    [JsonExporterAttribute.Full]
+    [JsonExporterAttribute.FullCompressed]
     public class Benchmarks
     {
         private static readonly string _json = File.ReadAllText("MovieStats.json");
