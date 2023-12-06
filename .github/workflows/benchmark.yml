@@ -1,6 +1,10 @@
 name: Benchmark
 on:
   workflow_dispatch:
+  push: # run on pushes to main (only happens when PRs are merged or admin commits directly to main)
+    branches:
+    - main
+  pull_request: # run on all PR actions (push, open, reopen)
 
 permissions:
   # deployments permission to deploy GitHub pages website
