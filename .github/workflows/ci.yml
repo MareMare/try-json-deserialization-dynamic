@@ -10,12 +10,6 @@ on:
     paths:
     - "src/**"
 
-env:
-  CONFIGURATION: Release
-  DOTNET_CORE_VERSION: 8.0.x
-  WORKING_DIRECTORY: src
-  TESTING_DIRECTORY: src
-
 jobs:
   ci:
     name: CI on windows
@@ -33,5 +27,3 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: 🧪 Test
       run: dotnet test --configuration Release --no-build --verbosity normal --filter 'Category!=local'
-    - name: 📏 Run Benchmarks
-      run: dotnet run --configuration Release --project src/JsonDeserializationDynamicObject.Benchmark
