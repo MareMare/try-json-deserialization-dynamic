@@ -24,4 +24,5 @@ dotnet run -c Release --project src/JsonDeserializationDynamicObject.Benchmark
 
 ## Benchmark Charts
 
-https://maremare.github.io/try-json-deserialization-dynamic/dev/bench/
+Benchmark charts are below:
+* https://maremare.github.io/try-json-deserialization-dynamic
