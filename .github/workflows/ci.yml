@@ -30,4 +30,5 @@ jobs:
         reportgenerator -reports:coverage/*/coverage.cobertura.xml -targetdir:CodeCoverage -reporttypes:'MarkdownSummaryGithub'
 
     - name: Write to Job Summary
+      shell: bash
       run: echo "$(cat CodeCoverage/SummaryGithub.md)" >> $GITHUB_STEP_SUMMARY
