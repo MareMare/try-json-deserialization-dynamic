@@ -24,11 +24,9 @@ jobs:
     - name: 🧪 Test
       run: dotnet test --configuration Release --no-build --verbosity normal --filter 'Category!=local' --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
       
-    - name: Create code coverage report
+    - name: 🩺 Code coverage report
+      shell: bash
       run: |
         dotnet tool install -g dotnet-reportgenerator-globaltool
         reportgenerator -reports:coverage/*/coverage.cobertura.xml -targetdir:CodeCoverage -reporttypes:'MarkdownSummaryGithub'
-
-    - name: Write to Job Summary
-      shell: bash
-      run: echo "$(cat CodeCoverage/SummaryGithub.md)" >> $GITHUB_STEP_SUMMARY
+        echo "$(cat CodeCoverage/SummaryGithub.md)" >> $GITHUB_STEP_SUMMARY
