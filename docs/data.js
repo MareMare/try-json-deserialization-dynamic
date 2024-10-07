@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727290897307,
+  "lastUpdate": 1728327930181,
   "repoUrl": "https://github.com/MareMare/try-json-deserialization-dynamic",
   "entries": {
     "JsonDeserializationDynamicObject Benchmark": [
@@ -1760,6 +1760,74 @@ window.BENCHMARK_DATA = {
             "value": 55791551.85185185,
             "unit": "ns",
             "range": "± 551546.8188417804"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "MareMare",
+            "username": "MareMare"
+          },
+          "committer": {
+            "name": "MareMare",
+            "username": "MareMare"
+          },
+          "id": "e82f9de12a34a1f42718552f7077c707ba8d633c",
+          "message": "Bump actions/checkout from 4.1.7 to 4.2.1",
+          "timestamp": "2024-07-09T22:41:18Z",
+          "url": "https://github.com/MareMare/try-json-deserialization-dynamic/pull/10/commits/e82f9de12a34a1f42718552f7077c707ba8d633c"
+        },
+        "date": 1728327915467,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonElement",
+            "value": 627129.1666666666,
+            "unit": "ns",
+            "range": "± 449.2977313946295"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.NewtonsoftJsonAnonymousType",
+            "value": 818212.2395833334,
+            "unit": "ns",
+            "range": "± 2932.4147402658486"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonObject",
+            "value": 1030277.9296875,
+            "unit": "ns",
+            "range": "± 10742.248083991091"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.SystemTextJsonAnonymousType",
+            "value": 1408619.6614583333,
+            "unit": "ns",
+            "range": "± 3357.331599038393"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJObject",
+            "value": 3385015.3645833335,
+            "unit": "ns",
+            "range": "± 43610.515369943896"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingDynamic",
+            "value": 3603773.4375,
+            "unit": "ns",
+            "range": "± 185980.18926310362"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonPath",
+            "value": 3730023.6979166665,
+            "unit": "ns",
+            "range": "± 135910.02349454374"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingExpandoObject",
+            "value": 54708933.333333336,
+            "unit": "ns",
+            "range": "± 560330.9798086603"
           }
         ]
       }
