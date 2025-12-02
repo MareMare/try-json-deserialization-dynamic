@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764699135723,
+  "lastUpdate": 1764705666037,
   "repoUrl": "https://github.com/MareMare/try-json-deserialization-dynamic",
   "entries": {
     "JsonDeserializationDynamicObject Benchmark": [
@@ -2804,6 +2804,78 @@ window.BENCHMARK_DATA = {
             "value": 54085448.14814815,
             "unit": "ns",
             "range": "± 121540.60965059744"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "43bb92ef3e6de9dc02942dd6d27d439cfd5186cb",
+          "message": "Bump actions/checkout from 6.0.0 to 6.0.1 (#17)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6.0.0 to 6.0.1.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6.0.0...v6.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: 6.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2025-12-03T04:58:25+09:00",
+          "tree_id": "97bd47d1d67f609b19e45b37fc9602ee189bed69",
+          "url": "https://github.com/MareMare/try-json-deserialization-dynamic/commit/43bb92ef3e6de9dc02942dd6d27d439cfd5186cb"
+        },
+        "date": 1764705661278,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonElement",
+            "value": 676530.56640625,
+            "unit": "ns",
+            "range": "± 5501.928027078506"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.NewtonsoftJsonAnonymousType",
+            "value": 901319.2708333334,
+            "unit": "ns",
+            "range": "± 7840.398242439072"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonObject",
+            "value": 1199767.5130208333,
+            "unit": "ns",
+            "range": "± 5030.806130995018"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.SystemTextJsonAnonymousType",
+            "value": 1875233.8541666667,
+            "unit": "ns",
+            "range": "± 5017.617561142789"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingDynamic",
+            "value": 3048348.6979166665,
+            "unit": "ns",
+            "range": "± 7538.703585341446"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJsonPath",
+            "value": 3067363.5416666665,
+            "unit": "ns",
+            "range": "± 21968.196357562607"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingJObject",
+            "value": 3135579.4270833335,
+            "unit": "ns",
+            "range": "± 151488.07862231598"
+          },
+          {
+            "name": "JsonDeserializationDynamicObject.Benchmark.Benchmarks.UsingExpandoObject",
+            "value": 54115946.666666664,
+            "unit": "ns",
+            "range": "± 85647.5944398518"
           }
         ]
       }
