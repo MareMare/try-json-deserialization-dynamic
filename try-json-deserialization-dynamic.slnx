@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/JsonDeserializationDynamicObject.Benchmark/JsonDeserializationDynamicObject.Benchmark.csproj" />
+    <Project Path="src/JsonDeserializationDynamicObject.Tests/JsonDeserializationDynamicObject.Tests.csproj" />
+    <Project Path="src/JsonDeserializationDynamicObject/JsonDeserializationDynamicObject.csproj" />
+  </Folder>
+</Solution>
